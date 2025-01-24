@@ -1,7 +1,7 @@
 # NBA Game Day Notifications / Sports Alerts System
 
 ## **Project Overview**
-This project is an alert system that sends real-time NBA game day score notifications to subscribed users via SMS/Email. It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EvenBridge** and **NBA APIs** to provide sports fans with up-to-date game information. The project demonstrates cloud computing principles and efficient notification mechanisms.
+This project is an alert system that sends real-time NBA game day score notifications to subscribed users via SMS/Email. It leverages **Amazon SNS**, **AWS Lambda and Python**, **Amazon EventBridge** and **NBA APIs** to provide sports fans with up-to-date game information. The project demonstrates cloud computing principles and efficient notification mechanisms.
 
 ---
 
@@ -9,7 +9,7 @@ This project is an alert system that sends real-time NBA game day score notifica
 - Fetches live NBA game scores using an external API.
 - Sends formatted score updates to subscribers via SMS/Email using Amazon SNS.
 - Scheduled automation for regular updates using Amazon EventBridge.
-- Designed with security in mind, following the principle of least privilege for IAM roles.
+- Designed with security in mind, following the principle of least-privilege for IAM roles.
 
 ## **Prerequisites**
 - Free account with subscription and API Key at [sportsdata.io](https://sportsdata.io/)
@@ -30,7 +30,7 @@ This project is an alert system that sends real-time NBA game day score notifica
 - **External API**: NBA Game API (SportsData.io)
 - **Programming Language**: Python 3.x
 - **IAM Security**:
-  - Least privilege policies for Lambda, SNS, and EventBridge.
+  - Least-privilege policies for Lambda, SNS, and EventBridge.
 
 ---
 
@@ -123,15 +123,15 @@ cd game-day-notifications
 
 ![image](https://github.com/user-attachments/assets/bda3cd4e-05a8-46c6-b106-0c3295060665)
 
-###The lambda was triggerd successfully.
+###The lambda was triggered successfully.
 ![image](https://github.com/user-attachments/assets/0e1645bf-b031-4f8c-9cdc-3007896b2e08)
 
-###Data was processed, sent to SNS and recieved in the Email (endpoint)
+###Data was processed, sent to SNS and received in the Email (endpoint)
 ![image](https://github.com/user-attachments/assets/70b87540-142f-4831-8302-e6013686f45e)
 
 
-### **Set Up Automation with Eventbridge**
-1. Navigate to the Eventbridge service in the AWS Management Console.
+### **Set Up Automation with EventBridge**
+1. Navigate to the EventBridge service in the AWS Management Console.
 2. Go to Rules → Create Rule.
 3. Select Event Source: Schedule.
 4. Set the cron schedule for when you want updates (e.g., hourly).
@@ -149,7 +149,7 @@ cd game-day-notifications
 
 ### **What We Learned**
 1. Designing a notification system with AWS SNS and Lambda.
-2. Securing AWS services with least privilege IAM policies.
+2. Securing AWS services with least-privilege IAM policies.
 3. Automating workflows using EventBridge.
 4. Integrating external APIs into cloud-based workflows.
 
